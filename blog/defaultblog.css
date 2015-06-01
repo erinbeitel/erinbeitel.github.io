@@ -1,0 +1,40 @@
+img {
+	position: relative;
+	width: 51.4px;
+  	height: 38.6px;
+	top: 5px;
+	left: 5px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+#postslink {
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-right: 20px;
+
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+		font-family: 'Open Sans', sans-serif;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.notcenter {
+	text-align: left;
+}
+
+section {
+	margin-right: 25%;
+	margin-left: 25%;
+}
