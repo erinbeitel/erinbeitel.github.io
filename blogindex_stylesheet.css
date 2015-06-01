@@ -1,0 +1,51 @@
+img {
+	position: relative;
+	width: 51.4px;
+  	height: 38.6px;
+	top: 5px;
+	left: 5px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+table tbody tr td {
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+table {
+	margin-top: 75px;
+}
+
+#tablehead {
+	margin-top: 50px;
+	font-size: 44px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#datecircle {
+	background-color: #DADFE1;
+	border-radius: 50px;
+	height: 60px;
+	width: 60px;
+	font-size: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	font-style: black;
+}
+
+#technical {
+	background-color: #DADFE1;
+}
+
+a {
+	text-decoration: none;
+	color: #2AB998;
+}
+
+a p {
+	color: black;
+}
