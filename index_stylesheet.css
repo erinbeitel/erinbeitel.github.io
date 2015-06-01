@@ -71,18 +71,37 @@ img {
 
 div table {
 	float: left;
-	margin: 300px 0px 300px 0px;
+	margin: 200px 0px 100px 0px;
 	position: relative;
 }
 
 div table tbody tr td {
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
 	font-size: 44px;
-	padding: 40px 300px 40px 60px;
 	font-family: 'Open Sans', sans-serif;
 	float: left;
 }
+
+#projects {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 40px 400px 40px 60px;
+	margin-bottom: -25px;
+
+}
+
+#blog {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 40px 475px 40px 60px;
+	margin-bottom: -25px;
+}
+
+#about {
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 40px 440px 40px 60px;
+}
+
 
 a {
     color: #2AB998;
