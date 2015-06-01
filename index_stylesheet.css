@@ -2,26 +2,71 @@ img {
 	width: 1028px;
   	height: 772px;
 	float: left;
-	margin: 125px 0px 125px -10px;
+	margin: 100px 0px 0px -10px;
 	display: inline-block;
 }
 
 #name {
-	float: left;
-	font-family: rock-salt open-sans;
-	margin: 900px 0px 0px 10px;
+	position: absolute;
+  font-family: 'Rock Salt', cursive;
+  margin-top: 890px; 
+  margin-bottom: 75px; 
+  margin-left: 10px;
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  clear: both;
+  color: gray;
+}
+
+#GitHub{
+		position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 895px;
+	margin-bottom: 75px;
+	margin-left: -375px;
 	display: inline-block;
 	font-size: 30px;
+	width:  100%;
+	padding-right: 10px;
+	color: gray;
+	/*border: 1px:
+	border-width: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: gray;*/
 }
 
-#belowpic {
-	border: clear;
-}
-
-#social {
+#twitter{
+		position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 895px;
+	margin-bottom: 75px;
+	margin-left: -250px;
 	display: inline-block;
-	position: absolute;
-	float: right;
+	font-size: 30px;
+	width:  100%;
+	padding-right: 10px;
+	color: gray;
+}
+
+#LinkedIn{
+		position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 895px;
+	margin-bottom: 75px;
+	margin-left: -125px;
+	display: inline-block;
+	font-size: 30px;
+	width:  100%;
+	padding-right: 10px;
+	color: gray;
+}
+
+
+.footer {
+	bottom: 20px;
 }
 
 div table {
@@ -34,13 +79,13 @@ div table tbody tr td {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 	font-size: 44px;
-	padding: 40px 400px 40px 60px;
-	font-family: open-sans Veranda;
+	padding: 40px 600px 40px 60px;
+	font-family: 'Open Sans', sans-serif;
 	float: left;
 }
 
 a {
     color: #2AB998;
     text-decoration: none;
-    font-family: open-sans;
+    /*font-family: open-sans;*/
 }
