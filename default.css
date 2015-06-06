@@ -1,4 +1,6 @@
-/*img {
+/* Default stylesheet for pages other than the index page*/
+
+img {
 	position: relative;
 	width: 51.4px;
   	height: 38.6px;
@@ -11,15 +13,8 @@
 a {
 	text-decoration: none;
 	color: #2AB998;
-}*/
+}
 
-/*a p {
-	color: black;
-}*/
-
-
-/*New*/
-/*
 body {
 	margin: 0px;
 }
@@ -41,52 +36,18 @@ body {
 	display: inline-block;
 	padding: 15px;
 	text-transform: uppercase;
-}*/
-
-#post_column {
-	float: center;
-	width: 40%;
-	position: absolute;
-	left: 30%;
-	right: 30%;
 }
 
-.one_post {
-	padding: 20px 50px 20px 50px;
-	margin-bottom: 30px;
-	margin-top: 30px;
-
-}
-
-/*li a {
+li a {
 	color: white;
 }
 
 li a:hover {
 	color: #1F3A93;
-}*/
+}
 
-/*#postpage_title {
+#postpage_title {
 	margin-top: 40px;
 	font-size: 60px;
-	font-family: 'Open Sans', sans-serif;
-}*/
-
-.post_date {
-	font-size: 12px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.post_title {
-	font-size: 24px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.post_preview {
-	font-family: 'Open Sans', sans-serif;
-}
-
-.read_more {
-	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
 }
