@@ -20,7 +20,7 @@ img {
 }
 
 #GitHub{
-		position: absolute;
+	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 895px;
 	margin-bottom: 75px;
@@ -39,7 +39,7 @@ img {
 }
 
 #twitter{
-		position: absolute;
+	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 895px;
 	margin-bottom: 75px;
@@ -52,7 +52,7 @@ img {
 }
 
 #LinkedIn{
-		position: absolute;
+	position: absolute;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 895px;
 	margin-bottom: 75px;
@@ -64,6 +64,9 @@ img {
 	color: gray;
 }
 
+td a:hover {
+	color: #1F3A93;
+}
 
 .footer {
 	bottom: 20px;
