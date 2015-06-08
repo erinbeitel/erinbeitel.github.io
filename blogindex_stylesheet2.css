@@ -89,4 +89,6 @@ li a:hover {
 .read_more {
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
+/*	float: right;
+	margin-top: 0px;*/
 }
