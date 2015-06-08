@@ -15,41 +15,115 @@
       </a>
       <ul>
         <li>
-          <a href="../blog_index2.html">Portfolio</a>
+          <a href="#">Portfolio</a>
         </li>
         <li>
           <a href="../blog_index2.html">Posts</a>
         </li>
         <li>
-          <a href="../blog_index2.html">About</a>
+          <a href="#">About</a>
         </li>
       </ul> 
-      <p align="center" id="postpage_title">Comparing Arrays and Hashes</p>
+      <p align="center" id="postpage_title">Array vs Hash</p>
     </header>
 
     <main class="aligncenter">
-      <h2>Phase 0, Week 3</h2>
+      <h2>What are they and when do you use them?</h2>
+      <!-- <h2>Phase 0, Week 3</h2> -->
       <h4>June 7, 2015</h4>
 
-      <section>
+      <section class="single_post">
         <p class="notcenter">
-          In preparation for the start of Phase 0, we were asked to explore our <a href="http://web.cortland.edu/andersmd/learning/gregorc.htm">Gregorc Thinking Style</a> and take <a href="http://www.thelearningweb.net/personalthink.html">personal thinking style</a> quiz. Gregorc describes four thinking styles: Concrete Sequential, Abstract Sequential, Abstract Random, and Concrete Random. From this excercise, I learned that I my thinking style was the least Concrete Sequential, with a score of only 4, and much more leaning towards the other three, with a score of 32 for Abstract Sequential, a score of 40 for Abstract Random, and a score of 44 for Concrete Random.
+          In the first week of DBC, we focused on the command line; in the second week, HTML and CSS were introduced; this week we started Ruby. Amongst the excitement: arrays and hashes.
+        </p>
+        <h3 class="notcenter">
+          What are they are when do you use them?
+        </h3>
+        <p class="notcenter">
+          Great question... Lets start with their similarities. Arrays and Hashes both store stuff, object type elements to be specific. They also both allow elements to be retrieved using a "key". And, they both allow methods to be called on them.
         </p>
         <p class="notcenter">
-          Gregorc describes two perceptual qualities: first, concrete, to be a quality that allows for the registration of information through the 5 senses, in the moment, without looking beyond into more subtle implications. He describes the second perceptual quality, abstract, to allow for visualization, ideation and using intuition to look beyond into the less concrete. This actually makes a lot of sense in relation to my work so far in phase zero. When I first learn things, I tend to be more concrete, wanting to practice the exact example in the book to make sure I understand everything before moving on. Then, once I understand the material, I'm able to apply it in the challenges and image how it could be applied in other contexts.
+           How you retrieve what you've stored differs between arrays and hashes. When retrieving an element of an array, the key you use is an integer because arrays always have consequitive integer index keys. For example, names[0] would get you the first element of the array "names". If that array was <code> names = ["sara", "erykah", "sam"] </code>then, <code> names[0] </code>would return "sara". 
         </p>
         <p class="notcenter">
-            Gregorc also describes two perceptual qualities: squential and random. Sequential is linear, step by step orgainzation while random allows information to be organized in no particular order, in chunks, starting in the middle or wherever makes the most sense. This is interesting, because in college I was very sequential. I reviewed chapters, studied for quizzes, etc. etc. in order. Sometimes going in order can be problematic if the sequence isn't required to maximize learning. For example, if I need to understand ch. 2 to understand ch.3 I obviously need to study 2 before 3. However, if I don't need to understand 2 before 3 and I'm doing so just so I can keep track of checking off what I've mastered for the quiz, then it means I didn't correctly prioritze what to study based on which areas need the most review. If I study the chapters in order and have unlimited time, all is well. If I don't review the topics I'm most confused about first and I run out of time, then I'm going to have very organized notes and a bad grade... which I figured out several times in college before making the adjustment.
+           To retrieve something stored in a hash, the key is a object. For example, in the hash "address", if you used the key "street_address" to store "park" then to access your street address you would type <code> address['street_address'] </code>which would return "park".
         </p>
+        <h3 class="notcenter">
+          How do you choose?
+        </h3>
         <p class="notcenter">
-            The random score that I got - concrete random and abstract random being my two highest scores - is probably more of an adaptation that I've come by. I know that a little skipping around helps me not to spend too much time on any one thing, helps me to keep the bigger picture in mind, and helps me to allocate time to the things that need it most. What I learned in college making beautiful study sheets for the first half of the chapters and winging it on the second half, was that it isn't the chapters that matter - it's the topics. The reason I sometimes skip around now isn't because I'm doing topics out of order, it's because I'm paying close attention to which topics come before others and if I understand something that allows me to move on to something later I jump at the chance so see what's coming.
-            I can also be a little ADD, and the chance to work on several challenges at the same time is really great for that. If I get stuck or bored on one challenge sometimes all it takes to refocus is to read an upcoming challenge and see that what I'm learning is super important for what's coming up.
+            Arrays have the advantage of having easily accessible elements. If you wanted to iterate through the different elements of an array and access each index using an integer. You wouldn't be able to do this the same way on hashes that have non-integer keys. Hashes, although slightly more challenging to access, are useful because of the flexibilty that they provide for storing information. The key-value pair for a hash can have an integer key (ex: '5'), a string key (ex: 'hats'), a floating point key (ex: 5.55) or any other Ruby object as its key. It's common to think of a hash like a dictionary, where the key is the word that allows you to look up the associated definition.
         </p>
          <p class="notcenter">
-            I grew up with a psychologist dad. How I do things was a focus of conversation from a pretty early age. I was never one to make decisions based on what I was good at, but rather to dive into what I was not good at. That's probably something that would come out in whole different personality questionaire, yikes..., but in any case, whether learning about your learning style helps you to create the best learning environment for yourself or to work hard at your areas of weakness, the knowledge allows some powerful informed decision making to take place.
+            Declaring arrays and hashes looks quite different. To declare an array, literally, you could do this:
         </p>
-
+        <p class="notcenter">
+          <code>
+          array = ["a", "b", "c"]
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+          array = []
+          </code>
+        </p>
+        <p class="notcenter">
+        or, to declare it using the array object's constructor, array.new, you could do this:
+        </p>
+        <p class="notcenter">
+          <code>
+          array = Array.new
+          </code>
+        </p>
+         <p class="notcenter">
+            A hash can be declared literally, like this: 
+        </p>
+        <p class="notcenter">
+          <code>
+              address = {street_address: "park", city: "chicago"}
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+              address = {:street_address=>"park", :city=>"chicago"}
+          </code>
+        </p>
+        <p class="notcenter">
+            or declaratively, using a new method, like this:
+        </p>
+        <p class="notcenter">
+        <code>
+              address = Hash.new
+        </code>
+        </p>
+        <p class="notcenter">
+        <code>
+              address[:street_address] = "park"
+        </code>
+        </p>
+        <p class="notcenter">
+        <code>
+              address[:city] = "chicago"
+        </code>
+        </p>
+        <p class="notcenter">
+            In some cases, both arrays and hashes are applicable but one is more advantagous. For example, if you were storing the owners of cars using their 8 digit liscense plate number, or the names of students using their 8 digit ID numbers, you would use a hash. If you used an array for this scenario, you would end up with a 100,000,000 element table to access the names associated with the 8 digit numbers. Not ideal.
+        </p>
+        <p class="notcenter">
+            For more details, see the Ruby documentation on <a href="http://ruby-doc.org/core-2.2.0/Hash.html">Hashes</a> and <a href="http://ruby-doc.org/core-2.2.0/Array.html">Arrays</a> and this blog about <a href="http://www.gotealeaf.com/blog/how-the-hash-works-in-ruby">How the Hash Works</a>.
+        </p>
       </section>
+
+      <footer class="bottomnav">
+      <ul>
+        <li>
+          <p>Have feedback?</p>
+        </li>
+        <li>
+          <p>Email me at erin.beitel@gmail.com</p>
+        </li>
+      </ul> 
+    </footer>
     
     </main>
   </body>

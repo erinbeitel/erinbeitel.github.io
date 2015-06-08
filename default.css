@@ -51,3 +51,26 @@ li a:hover {
 	font-size: 60px;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.bottomnav {
+	height: 50px;
+	background-color: #2AB998;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.bottomnav ul {
+	float: center;
+	list-style: none;
+	margin-bottom: none;
+}
+
+.bottomnav li {
+	display: inline-block;
+}
+
+code {
+	color: gray;
+	font-size: 14pt;
+}
