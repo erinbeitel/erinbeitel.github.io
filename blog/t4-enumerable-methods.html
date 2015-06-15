@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <head>
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  	<link type="text/css" rel="stylesheet" href="../blogtemplate_stylesheet.css"/>
+    <link type="text/css" rel="stylesheet" href="../default.css"/>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/DSC00524.jpg"/>
+  	<meta charset="UTF-8">
+  	<title>Erin's DBC Blog</title>
+  </head>
+
+  <body>
+    
+    <header class="topnav">
+      <a href="../index.html">
+        <img src="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/DSC00524.jpg" alt="Opps! A picture usually goes here."/>
+      </a>
+      <ul>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <a href="../blog_index2.html">Posts</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul> 
+      <p align="center" id="postpage_title">Enumerables</p>
+    </header>
+
+    <main class="aligncenter">
+      <h2>Use Cases of the "cycle" Method</h2>
+      <!-- <h2>Phase 0, Week 4</h2> -->
+      <h4>June 14, 2015</h4>
+
+      <section>
+        <p class="notcenter">
+          Enumerables are a collection of classes with methods related to searching, sorting and traversing elements of an array or hash. In each class, successive elements of a collection are made available through the implementation of the each method. 
+        </p>
+        <h3 class="notcenter">
+          The method cycle - an example of one such method from the enumerable mixin. 
+        </h3>
+        <p class="notcenter">
+          <code>cycle</code> calls the block of code given, for each element, a speficied number of times, cyclically. For example, if cycle is called on the range <code>(1...3)</code> and specified to undergo two cycles, for the block of code <code>puts x*x</code>, the method would square each element in the range and then cycle back through and square each element again. The results of this process would be collected into an internal array and printed as <code>1 4 9 1 4 9</code> with a return of <code>nil</code>.
+        </p>
+        <p class="notcenter">
+          <code>
+            (1..3).cycle(2) {|x| puts x*x}
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            => 1, 4, 9, 1, 4, 9 
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            => nil
+          </code>
+        </p>
+
+        <p class="notcenter">
+          If a specification is not made for the number of cycles, then the method will continue forever.
+        </p>
+          <p class="notcenter">
+          <code>
+            (1..3).cycle {|x| puts x*x}
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            => 1, 4, 9, 1, 4, 9, 1, 4, 9, 1, 4, 9, 1, 4, 9, 1, 4, 9, 1, 4, 9, 1, 4, 9 forever...
+          </code>
+        </p>
+        <p class="notcenter">
+          This infinite loop can be broken by tripping a break statement under certian circumstances. For example, a method could cycle through the months of the year and break when the month of May is encountered like so: 
+        </p>
+        <p class="notcenter">
+          <code>
+            months_year.cycle do |mo|
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            puts mo
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            break if mo == "May"
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            end
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            => Jan, Feb, Mar, Apr, May
+          </code>
+        </p>
+        <p class="notcenter">
+          <code>
+            => nil 
+          </code>
+        </p>
+        <p class="notcenter">
+          More information on methods like <code>cycle</code> can be found in the Ruby doc for the <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html">Enumerable</a> mixin. 
+        </p>
+      </section>
+      
+       <footer class="bottomnav">
+        <ul>
+          <li>
+            <p>Have feedback?</p>
+          </li>
+          <li>
+            <p>Email me at erin.beitel@gmail.com</p>
+          </li>
+        </ul> 
+      </footer>    
+
+    </main>
+  </body>
+</html>
