@@ -8,6 +8,16 @@ img {
 	border-radius: 5px;
 }
 
+section img {
+	position: relative;
+	border-radius: 0px;
+	width: 1507.2px;
+	height: 703.2px;
+	left: -220px;
+
+	display: inline-block;
+}
+
 #postslink {
 	float: right;
 	font-family: 'Open Sans', sans-serif;
