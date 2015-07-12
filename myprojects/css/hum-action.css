@@ -1,0 +1,9 @@
+.topnav {
+	height: 200px;
+	background-color: white;
+	color: white;
+}
+
+li a {
+	color: gray;
+}
