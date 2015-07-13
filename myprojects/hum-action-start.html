@@ -5,7 +5,9 @@
     <link type="text/css" rel="stylesheet" href="../default.css"/>
     <link type="text/css" rel="stylesheet" href="css/hum-action.css"/>
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/DSC00524.jpg"/>
-  	<meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-1%404x.png"/>
+  	<link rel="shortcut icon" href="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/IP5%20background%404x.png"/>
+    <meta charset="UTF-8">
     <script src="js/hum-action-basic-game.js"></script>
 
   	<title>Humanitarian Action</title>
@@ -21,13 +23,27 @@
       </ul> 
     </header>
 
-    <main class="aligncenter">
+    <main>
 
       <section>
-        <p class="notcenter">
- 
+        <p>
+<!--         <img src="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/IP5%20background%404x.png"/> -->
         </p>
+        
+<img id="myImage" onclick="changeImage()" src="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/IP5%20background%404x.png" width="100" height="180">
 
+<p>Click the light bulb to turn on/off the light.</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-1%404x.png";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+}
+</script>
 
       </section>
       
