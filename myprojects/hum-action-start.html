@@ -26,24 +26,59 @@
     <main>
 
       <section>
+        <div id="stat-box">
+          <table id="stat-table">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Player</td>
+              </tr>
+              <tr>
+                <td>LocationX</td>
+                <td id="player-locationX">0</td>
+              </tr>
+              <tr>
+                <td>LocationY</td>
+                <td id="player-locationY">0</td>
+              </tr>
+              <tr>
+                <td>Food</td>
+                <td id="player-food">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
         <p>
 <!--         <img src="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/IP5%20background%404x.png"/> -->
         </p>
-        
-<img id="myImage" onclick="changeImage()" src="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/IP5%20background%404x.png" width="100" height="180">
+      <p id="demo">  
+<img id="myImage" onclick="changeImage()" src="https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-1%404x.png" width="28" height="28">
+      </p>
 
-<p>Click the light bulb to turn on/off the light.</p>
+<p>Click to run!</p>
 
 <script>
 function changeImage() {
     var image = document.getElementById('myImage');
-    if (image.src.match("bulbon")) {
+    if (image.src.match("5%404x")) {
         image.src = "https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-1%404x.png";
+    } else if (image.src.match("1%404x")) {
+        image.src = "https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-2%404x.png";
+    } else if (image.src.match("2%404x")) {
+        image.src = "https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-3%404x.png";
+    } else if (image.src.match("3%404x")) {
+        image.src = "https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-4%404x.png";
     } else {
-        image.src = "pic_bulbon.gif";
+        image.src = "https://raw.githubusercontent.com/erinbeitel/erinbeitel.github.io/master/images/run-5%404x.png";
     }
 }
 </script>
+
+<button id="move_button" type="button" onclick="player.move()"> Status </button>
+
+
 
       </section>
       
