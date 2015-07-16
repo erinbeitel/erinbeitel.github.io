@@ -74,3 +74,8 @@ code {
 	color: gray;
 	font-size: 14pt;
 }
+
+.post_entry {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
